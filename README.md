@@ -40,7 +40,8 @@
 
     <h3>UML Diagram</h3>
 
-    ![image](https://github.com/ErkanOzcanoglu/DesignPatterns/assets/98085368/bbf896a6-6718-458f-a026-13d6f5536a42)
+    ![image](https://github.com/ErkanOzcanoglu/DesignPatterns/assets/98085368/a6628756-4f51-4095-9357-cabf2d24bda3)
+
 
 
 
