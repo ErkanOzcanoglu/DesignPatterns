@@ -13,12 +13,7 @@
             Console.WriteLine("     Which vehicle do you prefer for the ticket?");
             Console.WriteLine("\n------------------------------------------------------------------------------");
             Console.Write("     Your choice: ");
-            string transportation = Console.ReadLine();
-            if (transportation == "Plane" && transportation == "plane" && transportation == "Train" && transportation == "train" &&
-                transportation == "Bus" && transportation == "bus" && transportation == "1" && transportation == "2" && transportation != "3") {
-                Console.WriteLine("     Please enter a valid vehicle.");
-                throw new ArgumentException("Invalid Transportation Type");
-            }
+            string transportation = Console.ReadLine().ToLower();
             ITravelTicket travelTicket = ticketFactory.CreateTicket(transportation);
 
             // 3. Choose the setmeal
@@ -26,7 +21,7 @@
             Console.WriteLine("     1. Yes");
             Console.WriteLine("     2. No");
             Console.Write("     Your choice: ");
-            string setmeal = Console.ReadLine();
+            string setmeal = Console.ReadLine().ToLower();
             travelTicket.SetMeal(setmeal);
             
             // 4. Choose the distance

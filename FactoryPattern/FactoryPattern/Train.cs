@@ -20,9 +20,9 @@ namespace FactoryPattern {
         }
 
         public void SetMeal(string wantMeal) {
-            if (wantMeal == "1" || wantMeal == "Yes" || wantMeal == "yes") {
-                this.setmeal = 15;
-            } else if (wantMeal == "2" || wantMeal == "No" || wantMeal == "no") {
+            if (wantMeal == "1" || wantMeal == "yes") {
+                this.setmeal = 25;
+            } else if (wantMeal == "2" || wantMeal == "no") {
                 this.setmeal = 0;
             } else {
                 Console.WriteLine("     Please enter a valid choice.");

@@ -9,15 +9,15 @@ namespace FactoryPattern {
         public ITravelTicket CreateTicket(string transportation) {
             switch (transportation) {
                 
-                case "train": case "Train": case "2": {
+                case "train": case "2": {
                         return new Train();
                     }
                 
-                case "bus":   case "Bus":   case "1": {
+                case "bus": case "1": {
                         return new Bus();
                     }
                 
-                case "plane": case "Plane": case "3": {
+                case "plane": case "3": {
                         return new Plane();
                     }
 
