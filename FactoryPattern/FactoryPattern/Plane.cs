@@ -14,7 +14,7 @@ namespace FactoryPattern {
         
         private int setmeal;
 
-        public string roundedPrice;
+        private string? roundedPrice; // Nullable type
         
         public void SetDistance(int distance) {
             this.distance = distance;
