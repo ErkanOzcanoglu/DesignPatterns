@@ -18,7 +18,10 @@
       We are creating a ticket sales system. It gets the transport type from user. After that, the user indicates whether he/she wants to eat or not. Finally, he/she entres the distance to go. 
     
     <h3>Solution</h3>
-      With factory pattern we replace direct object constructor calls with calls to a special factory method:
+      With factory pattern we replace direct object constructor calls with calls to a special factory method.
+      
+      Here is the Factory class.
+
       
             switch (transportation) {
                  case "train": case "Train": case "2": {
