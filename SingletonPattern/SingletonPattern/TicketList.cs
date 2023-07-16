@@ -29,11 +29,11 @@ namespace SingletonPattern {
                 Tickets = new List<Ticket>()
                 {
                     new Ticket(){TransportationType = "Bus", SetMeal = 1, Distance = 200, Price = 115 },
-                    //new Ticket(){TransportationType = "Bus", SetMeal = 2, Distance = 200, Price = 100 },
+                    new Ticket(){TransportationType = "Bus", SetMeal = 2, Distance = 200, Price = 100 },
                     new Ticket(){TransportationType = "Train", SetMeal = 1, Distance = 200, Price = 180 },
-                    //new Ticket(){TransportationType = "Train", SetMeal = 2, Distance = 200, Price = 160 },
+                    new Ticket(){TransportationType = "Train", SetMeal = 2, Distance = 200, Price = 160 },
                     new Ticket(){TransportationType = "Plane", SetMeal = 1, Distance = 200, Price = 240 },
-                    //new Ticket(){TransportationType = "Plane", SetMeal = 2, Distance = 200, Price = 200 }
+                    new Ticket(){TransportationType = "Plane", SetMeal = 2, Distance = 200, Price = 200 }
                 };
         }
             return Tickets;
