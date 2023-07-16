@@ -11,5 +11,5 @@
     <h2> 1) Factory Pattern </h2> 
 
     <h2> 2) Singleton Pattern </h2> 
-      
-    
+
+    <h2> 3) Adapter Pattern </h2>
