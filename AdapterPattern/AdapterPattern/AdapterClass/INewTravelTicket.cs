@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryPattern {
-    public interface ITravelTicket {
+namespace AdapterPattern.AdapterClass
+{
+    public interface INewTravelTicket
+    {
         void SetDistance(int distance);
-        void SetMeal(string meal);
+        void SetMeal(string wantMeal);
         void CalculatePrice();
         void PrintTicket();
     }

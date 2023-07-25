@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdapterPattern.AdapterClass;
 
-namespace AdapterPattern {
+namespace AdapterPattern
+{
     public static class Program {
         public static void Main(string[] args) {
 
             // 1. Create the ticket factory
-            TicketFactory ticketFactory = new TicketFactory();
+            TicketFactory ticketFactory = new();
 
             // 2. Choose the transportation type (Bus, Train, Plane)
             Console.WriteLine("------------------------------------------------------------------------------\n");
@@ -69,7 +71,7 @@ namespace AdapterPattern {
                         Console.WriteLine("\n------------------------------------------------------------------------------");
                         Console.Write("     Your choice: ");
                         string? newTransportation = Console.ReadLine();
-                        ITravelTicket newticket = newTicket.ChangeTicket(newTransportation, setmeal, distance);
+                        INewTravelTicket newticket = newTicket.ChangeTicket(newTransportation, setmeal, distance);
                         newticket.SetMeal(setmeal);
                         newticket.SetDistance(distance);
                         newticket.CalculatePrice();

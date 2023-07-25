@@ -4,23 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdapterPattern {
-    public  class TrainAdapter: ITravelTicket {
+namespace AdapterPattern.AdapterClass
+{
+    public class TrainAdapter : INewTravelTicket
+    {
         private readonly Train train;
-        
-        public TrainAdapter() {
+
+        public TrainAdapter()
+        {
             train = new();
         }
-        public void SetDistance(int distance) {
+        public void SetDistance(int distance)
+        {
             train.SetDistance(distance);
         }
-        public void SetMeal(string wantMeal) {
+        public void SetMeal(string wantMeal)
+        {
             train.SetMeal(wantMeal);
         }
-        public void CalculatePrice() {
+        public void CalculatePrice()
+        {
             train.CalculatePrice();
         }
-        public void PrintTicket() {
+        public void PrintTicket()
+        {
             Console.WriteLine("\n     Here is your new ticket");
             train.PrintTicket();
         }

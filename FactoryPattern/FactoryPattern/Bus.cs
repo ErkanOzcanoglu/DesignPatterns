@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FactoryPattern {
-    public class Bus : ITravelTicket {
+    public class Bus : ITravelTicket {  // Bus class implements ITravelTicket interface
 
         private int distance;
 

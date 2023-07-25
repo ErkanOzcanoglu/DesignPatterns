@@ -7,25 +7,26 @@ using System.Threading.Tasks;
 namespace SingletonPattern {
     public class TicketList {
 
-        private static TicketList instance;
-        public static TicketList Instance {
+        private static TicketList instance; // create a static instance of the class
+        public static TicketList Instance { 
             get {
-                if (instance is not null) {
-                    return instance;
+                if (instance is not null) { 
+                    return instance; // return the instance if it is not null
                 } else {
-                    instance = new TicketList();
+                    instance = new TicketList(); // create a new instance if it is null
                     return instance;
                 }
             }
             set => instance = value;
         }
-        private new List<Ticket> Tickets { get; set; }
-        public List<Ticket> GetTickets() 
+
+        private new List<Ticket> Tickets { get; set; } // create a list of tickets
+        public List<Ticket> GetTickets() // create a method to get the tickets
             {
 
-            if (Tickets is null) {
+            if (Tickets is null) { // if the list is null, create a new list
                 int time = 2000;
-                Thread.Sleep(time);
+                Thread.Sleep(time); // wait for 2 seconds
                 Tickets = new List<Ticket>()
                 {
                     new Ticket(){TransportationType = "Bus", SetMeal = 1, Distance = 200, Price = 115 },

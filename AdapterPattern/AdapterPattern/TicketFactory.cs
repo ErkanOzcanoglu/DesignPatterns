@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdapterPattern.AdapterClass;
 
-namespace AdapterPattern {
+namespace AdapterPattern
+{
     public class TicketFactory {
 
         public ITravelTicket CreateTicket(string transportation) {
@@ -31,7 +33,7 @@ namespace AdapterPattern {
             }
         }
 
-        public ITravelTicket ChangeTicket(string type,string setmeal,int distance) {
+        public INewTravelTicket ChangeTicket(string type,string setmeal,int distance) {
 
             switch(type) {
             
