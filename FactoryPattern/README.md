@@ -12,20 +12,27 @@
       Here is the Factory class.
 
       
+            public class TicketFactory {
+        public ITravelTicket CreateTicket(string transportation) {
             switch (transportation) {
-                 case "train": case "Train": case "2": {
-                        return new Train();
+                
+                case "train": case "2": {
+                        return new Train(); // return a new Train object
                     }
-                case "bus":   case "Bus":   case "1": {
-                        return new Bus();
+                
+                case "bus": case "1": {
+                        return new Bus(); // return a new Bus object
                     }
-                case "plane": case "Plane": case "3": {
-                        return new Plane();
+                
+                case "plane": case "3": {
+                        return new Plane(); // return a new Plane object
                     }
+
                 default: {
                         throw new ArgumentException("Invalid Transportation Type");
                     }
             }
+        }
   
   <h3>UML Diagram</h3>
   
