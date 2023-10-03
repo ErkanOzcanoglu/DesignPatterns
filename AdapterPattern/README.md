@@ -10,7 +10,7 @@
         If the user wants to change his ticket, we first get the name of the vehicle he wants to change. then we print the new ticket on the screen with the features selected while buying the ticket.
 
         public class BusAdapter : INewTravelTicket
-    {
+        {
         private readonly Bus bus;
 
         public BusAdapter()
